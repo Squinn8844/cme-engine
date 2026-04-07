@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Data files — real data NEVER committed
+# Fixture files (anonymized) ARE committed
+tests/fixtures/**/*.xlsx
+!tests/fixtures/**/README.md
+
+# Temp files
+*.tmp
+*.temp
+/tmp/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Secrets
+*.env
+.env.*
+secrets.yaml
+secrets.json

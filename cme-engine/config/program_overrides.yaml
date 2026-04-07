@@ -1,0 +1,30 @@
+# program_overrides.yaml
+# ──────────────────────
+# Per-program configuration overrides.
+# Use when the engine's automatic inference needs a manual correction
+# for a specific program — without changing engine code.
+#
+# Format:
+#   program_id:
+#     key: value
+#
+# Supported overrides:
+#   vendor_names:         map filename pattern → display name
+#   kq_correct_answer:    override correct answer for a specific KQ (by question text fragment)
+#   likert_scale:         force a specific scale family for a column label fragment
+#   skip_columns:         list of column label fragments to ignore
+
+# Example — uncomment and customize as needed:
+#
+# LAIPrEP_2025:
+#   vendor_names:
+#     "ExchangeCME_Format_LAIPrEP*": "ExchangeCME"
+#     "NEXUS_FORMAT*": "Nexus"
+#
+# IL33_2025:
+#   kq_correct_answer:
+#     "gene variant effects":
+#       "A variant that results in a truncated IL-33 protein and reduces its serum levels"
+#   likert_scale:
+#     "confident": "CONFIDENCE_B"
+#     "familiar":  "FAMILIARITY_B"
